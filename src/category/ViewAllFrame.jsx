@@ -1,8 +1,9 @@
 import React, { useContext } from "react";
 import { PetContext } from "../context/PetState";
 import { v4 as uuidv4 } from "uuid";
-// import { ToastContainer, toast } from "react-toastify";
-// import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { AddNotify } from "../Components/notification/AddNotification";
 
 const ViewAllFrame = ({ animal }) => {
   const id = uuidv4();
@@ -11,13 +12,12 @@ const ViewAllFrame = ({ animal }) => {
   //add func for moving cloth from product to cart onClick
   const addPet = () => {
     dispatch({ type: "AddToAdopt", payload: { ...animal, id } });
-    // toast.success("Pet added");
-    console.log(animal);
+    AddNotify();
   };
 
   return (
     <React.Fragment>
-      {/* <ToastContainer /> */}
+      <ToastContainer />
       <div className="relative flex flex-col shadow-lg  overflow-hidden  ">
         <div className="">
           <img
