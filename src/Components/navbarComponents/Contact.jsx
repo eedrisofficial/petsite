@@ -8,9 +8,9 @@ const Contact = () => {
   return (
     <React.Fragment>
       <Navbar />
-      <section className=" flex items-center justify-center py-10 px-[100px]">
+      <section className=" flex items-center justify-center py-10 px-0 lg:px-[100px]">
         <div className="w-[100%]  flex items-center shadow-lg  ">
-          <div className="w-[50%] flex flex-col gap-4 p-5">
+          <div className="lg:w-[50%] flex flex-col gap-4 p-5">
             <h2 className="font-bold text-2xl text-[#FFBD59]">
               Send us <span className="text-[#2C3639]">a message</span>{" "}
             </h2>
@@ -47,7 +47,7 @@ const Contact = () => {
               </button>
             </form>
             <div className="flex flex-col gap-8  pt-8 ">
-              <div className="flex justify-between gap-10">
+              <div className="flex flex-col justify-between gap-10 lg:flex-row">
                 <div className="text-[#2C3639] font-semibold  flex flex-col gap-1">
                   <p className="flex gap-2 items-center text-[#186f65]">
                     <span className="">
@@ -73,7 +73,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="w-[50%] hidden lg:flex ">
+          <div className="hidden lg:w-[50%] hidden lg:flex ">
             <img src="/contact.jpeg" alt="" className="w-full h-[100%]" />
           </div>
         </div>

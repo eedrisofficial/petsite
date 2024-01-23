@@ -24,8 +24,8 @@ const SignUp = () => {
     <div>
       <Navbar />
 
-      <div className="flex items-center gap-10 w-[100%]">
-        <section className="bg-black/70 relative w-[50%] h-screen">
+      <div className="flex justify-center items-center gap-10 w-[100%] p-3">
+        <section className="hidden lg:flex bg-black/70 relative lg:w-[50%] h-screen">
           <img
             src="https://images.pexels.com/photos/17502287/pexels-photo-17502287/free-photo-of-macaw-parrot-with-blue-and-yellow-feathers.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt=""
@@ -33,7 +33,7 @@ const SignUp = () => {
           />
         </section>
 
-        <section className="w-[50%]">
+        <section className="w-[80%] lg:w-[50%]">
           <h1 className="font-bold text-[2rem] ">Create Account </h1>
           <form action="" className="mt-6 ">
             <div className="flex flex-col gap-1">
@@ -70,7 +70,7 @@ const SignUp = () => {
               />
               <button
                 type="button"
-                className="absolute right-32 top-[70%] transform -translate-y-1/2 focus:outline-none"
+                className="absolute right-[1.6rem] lg:right-32 top-[70%] transform -translate-y-1/2 focus:outline-none"
                 onClick={togglePasswordVisibility}
               >
                 {showPassword ? (
@@ -131,7 +131,7 @@ const SignUp = () => {
               />
               <button
                 type="button"
-                className="absolute right-32 top-[70%] transform -translate-y-1/2 focus:outline-none"
+                className="absolute  right-[1.6rem] top-[70%] transform -translate-y-1/2 focus:outline-none lg:right-32"
                 onClick={togglePasswordVisibility}
               >
                 {showPassword ? (
@@ -178,7 +178,7 @@ const SignUp = () => {
                 </div>
               ) : null}
             </div>
-            <button className="mt-4 rounded-lg bg-[#2C3639] w-[25%] text-[#FFFFFF] text-[18px] font-bold px-2 py-1 hover:bg-indigo-950  duration-500">
+            <button className="mt-4 rounded-lg bg-[#2C3639] w-full lg:w-[25%] text-[#FFFFFF] text-[18px] font-bold px-2 py-1 hover:bg-indigo-950  duration-500">
               Sign up
             </button>
           </form>
