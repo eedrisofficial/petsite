@@ -67,7 +67,7 @@ const Contact = () => {
                   <p>eedrisharuna3@gmail.com</p>
                 </div>
               </div>
-              <div className="flex flex-col justify-center items-center font-extrabold text-black">
+              <div className="flex flex-col justify-start  font-extrabold text-black">
                 <h1>You can reach us via social media </h1>
                 <SocialMedia />
               </div>

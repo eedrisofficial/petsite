@@ -4,7 +4,7 @@ import { FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
 
 const SocialMedia = () => {
   return (
-    <div className="flex justify-center flex-row gap-6 p-4 md:gap-16 lg:gap-14 animate-pulse">
+    <div className="flex  flex-row gap-6 p-2 md:gap-16 lg:gap-14 animate-pulse">
       <a
         href="https://www.linkedin.com/in/haruna-idris-68aa3223a/"
         className="text-[#FFBD59] hover:-translate-y-1 hover:scale-105  duration-300 "
